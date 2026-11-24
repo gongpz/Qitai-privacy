@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="900" height="280" rx="16" fill="#faf6ef"/>
+  <text x="36" y="34" font-size="20" font-weight="700" fill="#2b2013">安全能力边界</text>
+  <text x="864" y="34" text-anchor="end" font-size="12.5" fill="#5a4a35">应用层保护，不是磁盘级加密</text>
+
+  <!-- 上层：插件保护（绿色） -->
+  <rect x="56" y="54" width="788" height="84" rx="14" fill="#0e9f6e" fill-opacity="0.10" stroke="#0e9f6e" stroke-opacity="0.35"/>
+  <circle cx="90" cy="96" r="20" fill="#0e9f6e" fill-opacity="0.18"/>
+  <path d="M 90,84 L 100,88 L 100,98 C 100,105 95,109 90,111 C 85,109 80,105 80,98 L 80,88 Z" fill="#0e9f6e"/>
+  <path d="M 85,97 L 89,101 L 96,93" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="124" y="90" font-size="16" font-weight="700" fill="#2b2013">插件保护（应用层）</text>
+  <text x="124" y="112" font-size="12.5" fill="#5a4a35">遮挡层 + 密码验证 + 大纲与搜索隐藏 · 挡住随手翻阅</text>
+  <rect x="590" y="82" width="72" height="24" rx="12" fill="#ffffff" stroke="#0e9f6e" stroke-opacity="0.4"/>
+  <text x="626" y="99" text-anchor="middle" font-size="11.5" fill="#0e9f6e">遮挡层</text>
+  <rect x="670" y="82" width="84" height="24" rx="12" fill="#ffffff" stroke="#0e9f6e" stroke-opacity="0.4"/>
+  <text x="712" y="99" text-anchor="middle" font-size="11.5" fill="#0e9f6e">密码验证</text>
+  <rect x="762" y="82" width="64" height="24" rx="12" fill="#ffffff" stroke="#0e9f6e" stroke-opacity="0.4"/>
+  <text x="794" y="99" text-anchor="middle" font-size="11.5" fill="#0e9f6e">隐藏</text>
+
+  <!-- 中间分界线 -->
+  <path d="M 56,152 L 844,152" stroke="#a46a1f" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <rect x="350" y="140" width="200" height="24" rx="12" fill="#faf6ef" stroke="#a46a1f"/>
+  <text x="450" y="157" text-anchor="middle" font-size="12" font-weight="600" fill="#a46a1f">应用层保护边界</text>
+
+  <!-- 下层：数据库文件（橙色警示） -->
+  <rect x="56" y="166" width="788" height="74" rx="14" fill="#e8890c" fill-opacity="0.10" stroke="#e8890c" stroke-opacity="0.35"/>
+  <circle cx="90" cy="203" r="20" fill="#a46a1f" fill-opacity="0.15"/>
+  <path d="M 90,192 L 100,210 L 80,210 Z" fill="#a46a1f"/>
+  <path d="M 90,198 L 90,204" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="90" cy="208" r="1.2" fill="#ffffff"/>
+  <text x="124" y="197" font-size="16" font-weight="700" fill="#2b2013">数据库文件：块正文仍为明文</text>
+  <text x="124" y="219" font-size="12.5" fill="#5a4a35">直接读取思源本地数据库可获取原文 · 不用于对抗专业数据取证</text>
+  <rect x="720" y="185" width="108" height="24" rx="12" fill="#ffffff" stroke="#e8890c"/>
+  <text x="774" y="202" text-anchor="middle" font-size="11.5" fill="#a46a1f">非磁盘级加密</text>
+
+  <!-- 底部三条关键事实 -->
+  <text x="56" y="266" font-size="11.5" fill="#5a4a35">密码不落盘明文（PBKDF2 + AES-GCM）</text>
+  <circle cx="315" cy="262" r="2" fill="#c9bda9"/>
+  <text x="331" y="266" font-size="11.5" fill="#5a4a35">解锁状态仅在内存</text>
+  <circle cx="441" cy="262" r="2" fill="#c9bda9"/>
+  <text x="457" y="266" font-size="11.5" fill="#5a4a35">密钥不提供找回，务必导出备份</text>
+</svg>

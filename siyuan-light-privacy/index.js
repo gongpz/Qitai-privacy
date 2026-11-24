@@ -1926,9 +1926,9 @@ class Panel {
             '<div class="lp-setting-row"><div class="lp-setting-row__text">面板主题' +
             '<span class="lp-setting-row__hint">跟随系统自动适配浅色 / 深色，也可手动指定。</span></div>' +
             '<div class="lp-radio-group">' +
-            '<label class="lp-radio"><input type="radio" name="lp-theme" data-theme-value="auto"' + (theme === "auto" ? " checked" : "") + '> 跟随系统</label>' +
-            '<label class="lp-radio"><input type="radio" name="lp-theme" data-theme-value="light"' + (theme === "light" ? " checked" : "") + '> 浅色</label>' +
-            '<label class="lp-radio"><input type="radio" name="lp-theme" data-theme-value="dark"' + (theme === "dark" ? " checked" : "") + '> 深色</label>' +
+            '<label class="lp-radio"><input type="radio" name="lp-theme" data-theme-value="auto"' + (theme === "auto" ? " checked" : "") + '> ' + escapeHtml(this.ctx.t("themeAuto", "跟随系统")) + '</label>' +
+            '<label class="lp-radio"><input type="radio" name="lp-theme" data-theme-value="light"' + (theme === "light" ? " checked" : "") + '> ' + escapeHtml(this.ctx.t("themeLight", "浅色")) + '</label>' +
+            '<label class="lp-radio"><input type="radio" name="lp-theme" data-theme-value="dark"' + (theme === "dark" ? " checked" : "") + '> ' + escapeHtml(this.ctx.t("themeDark", "深色")) + '</label>' +
             '</div></div>' +
             '</div>' +
             '<div class="lp-section">' +
@@ -2079,20 +2079,41 @@ class Panel {
     }
 
     renderAbout(container) {
+        const t = (key, fallback) => escapeHtml(this.ctx.t(key, fallback));
+        const boundaries = [
+            ["aboutBoundary1", "应用层保护，非磁盘级加密"],
+            ["aboutBoundary2", "默认块正文仍明文存于本地数据库"],
+            ["aboutBoundary3", "解锁状态仅存内存，刷新即失效"]
+        ];
         container.innerHTML = '<div class="lp-section">' +
-            '<dl class="lp-about-list">' +
-            '<dt>' + escapeHtml(this.ctx.t("version", "版本")) + '</dt><dd>0.4.0</dd>' +
-            '<dt>' + escapeHtml(this.ctx.t("adaptVersion", "适配版本")) + '</dt><dd>思源笔记 3.x</dd>' +
-            '<dt>实现范围</dt><dd>V0.1 - V0.4；V0.5 高级块正文加密为实验性预留，默认不写回块内容。</dd>' +
-            '</dl></div>' +
-            '<div class="lp-section"><div class="lp-section__title">' + escapeHtml(this.ctx.t("boundaryTitle", "安全能力边界")) + '</div>' +
-            '<div class="lp-setting-row__text">轻态隐私是应用层隐私保护，不是磁盘级或密码学级强加密：</div>' +
-            '<div class="lp-setting-row__text">1. 默认模式下块内容仍以明文存于思源本地数据库，直接读取数据库文件可获取原文。</div>' +
-            '<div class="lp-setting-row__text">2. 定位于防家人 / 同事随手翻阅、防演示误点开，不用于对抗专业数据取证。</div>' +
-            '<div class="lp-setting-row__text">3. 如需更高强度，可开启高级模式，但需接受版本回退等风险。</div>' +
-            '<div class="lp-setting-row__text">4. 密码与密钥不提供任何找回机制，请务必导出备份。</div>' +
-            '</div>' +
-            '<div class="lp-warning">密钥与密码不提供找回，请在「密钥备份与恢复」中导出备份。</div>';
+            '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">' +
+            '<strong style="font-size:15px">' + t("aboutScopeLabel", "轻态隐私") + '</strong>' +
+            '<span class="lp-badge lp-badge--mode">' + t("version", "版本") + ' 0.4.0</span>' +
+            '<span class="lp-badge lp-badge--mode">' + t("aboutAdapter", "思源笔记 3.x") + '</span>' +
+            '</div></div>' +
+            '<div class="lp-section"><div class="lp-setting-row__text">' +
+            t("aboutScopeText", "轻量锁住文档与目录，挡住随手翻阅；不改内核、不改数据库结构。") +
+            '</div></div>' +
+            '<div class="lp-section"><div class="lp-section__title">' + t("aboutBoundaryIntro", "安全边界（必读）") + '</div>' +
+            '<ul style="display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none">' +
+            boundaries.map(([key, fallback]) =>
+                '<li style="display:flex;align-items:center;gap:8px">' +
+                '<span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:var(--lp-brand)"></span>' +
+                '<span>' + t(key, fallback) + '</span></li>').join("") +
+            '</ul>' +
+            '<div class="lp-setting-row__hint" style="margin-top:12px">' +
+            t("aboutAdvanced", "高级模式：实验性预留，默认关闭，不写回块内容") + '</div></div>' +
+            '<div class="lp-section"><div class="lp-warning" style="margin:0">' +
+            t("aboutBackupLead", "密钥与密码不提供找回，请导出备份并妥善保存。") + '</div>' +
+            '<div style="display:flex;justify-content:flex-end;margin-top:12px">' +
+            '<button type="button" class="lp-btn lp-btn--primary" data-action="about-go-backup">' +
+            t("aboutGoBackup", "前往备份 →") + '</button></div></div>' +
+            '<div class="lp-section"><div class="lp-setting-row__hint">' +
+            t("aboutFooter", "零第三方依赖 · 前端插件 · 8 模块构建") + '</div></div>';
+        container.querySelector('[data-action="about-go-backup"]').addEventListener("click", () => {
+            this.activeTab = "backup";
+            this.render();
+        });
     }
 }
 

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="900" height="300" rx="16" fill="#faf6ef"/>
+  <text x="36" y="34" font-size="20" font-weight="700" fill="#2b2013">两种保护模式</text>
+  <text x="864" y="34" text-anchor="end" font-size="12.5" fill="#5a4a35">同一把锁，两种可见性</text>
+
+  <!-- 左栏：密码可见 -->
+  <rect x="36" y="58" width="402" height="206" rx="14" fill="#ffffff" stroke="#efe7d8"/>
+  <rect x="36" y="58" width="402" height="30" rx="14" fill="#fdf0db"/>
+  <rect x="36" y="84" width="402" height="4" fill="#fdf0db"/>
+  <circle cx="60" cy="80" r="6" fill="#e8890c"/>
+  <text x="74" y="86" font-size="17" font-weight="700" fill="#2b2013">密码可见</text>
+  <rect x="344" y="70" width="84" height="22" rx="11" fill="#ffffff" stroke="#e8c9a0"/>
+  <text x="386" y="85" text-anchor="middle" font-size="11" fill="#b45309">大纲正常显示</text>
+
+  <rect x="56" y="112" width="362" height="94" rx="10" fill="#faf6ef" stroke="#efe7d8"/>
+  <text x="68" y="132" font-size="11" fill="#5a4a35">大纲</text>
+  <rect x="70" y="140" width="14" height="11" rx="2" fill="#e8890c" fill-opacity="0.3" stroke="#b45309"/>
+  <text x="92" y="150" font-size="12.5" fill="#2b2013">项目资料</text>
+  <rect x="72" y="162" width="12" height="14" rx="2" fill="#ffffff" stroke="#c9bda9"/>
+  <text x="92" y="173" font-size="12.5" fill="#2b2013">年度预算</text>
+  <rect x="326" y="162" width="72" height="20" rx="10" fill="#fdf0db"/>
+  <path d="M 335,170 L 335,168 A 3,3 0 0 1 341,168 L 341,170" fill="none" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="333.5" y="170" width="9" height="7" rx="2" fill="#b45309"/>
+  <text x="346" y="177" font-size="10.5" fill="#b45309">已锁</text>
+  <rect x="72" y="182" width="12" height="14" rx="2" fill="#ffffff" stroke="#c9bda9"/>
+  <text x="92" y="193" font-size="12.5" fill="#2b2013">签署合同</text>
+  <rect x="326" y="180" width="72" height="20" rx="10" fill="#fdf0db"/>
+  <path d="M 335,188 L 335,186 A 3,3 0 0 1 341,186 L 341,188" fill="none" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="333.5" y="188" width="9" height="7" rx="2" fill="#b45309"/>
+  <text x="346" y="195" font-size="10.5" fill="#b45309">已锁</text>
+
+  <rect x="56" y="214" width="362" height="40" rx="10" fill="#ffffff" stroke="#efe7d8"/>
+  <circle cx="76" cy="234" r="10" fill="#fdf0db"/>
+  <path d="M 72,233 L 72,231 A 4,4 0 0 1 80,231 L 80,233" fill="none" stroke="#b45309" stroke-width="1.8"/>
+  <rect x="71" y="233" width="10" height="8" rx="2" fill="#b45309"/>
+  <text x="94" y="230" font-size="11.5" font-weight="600" fill="#2b2013">打开文档时</text>
+  <text x="94" y="246" font-size="11.5" fill="#5a4a35">遮挡层 + 密码面板，验密后显示正文</text>
+
+  <!-- 右栏：隐藏 -->
+  <rect x="462" y="58" width="402" height="206" rx="14" fill="#ffffff" stroke="#efe7d8"/>
+  <rect x="462" y="58" width="402" height="30" rx="14" fill="#fdf0db"/>
+  <rect x="462" y="84" width="402" height="4" fill="#fdf0db"/>
+  <circle cx="486" cy="80" r="6" fill="#5b8cff"/>
+  <text x="500" y="86" font-size="17" font-weight="700" fill="#2b2013">隐藏</text>
+  <rect x="744" y="70" width="110" height="22" rx="11" fill="#ffffff" stroke="#d6dce8"/>
+  <text x="799" y="85" text-anchor="middle" font-size="11" fill="#2b2013">大纲与搜索中消失</text>
+
+  <rect x="482" y="112" width="362" height="94" rx="10" fill="#faf6ef" stroke="#efe7d8"/>
+  <text x="494" y="132" font-size="11" fill="#5a4a35">大纲 / 搜索</text>
+  <rect x="496" y="140" width="14" height="11" rx="2" fill="#5b8cff" fill-opacity="0.25" stroke="#5b8cff"/>
+  <text x="518" y="150" font-size="12.5" fill="#2b2013">项目资料</text>
+  <rect x="496" y="160" width="334" height="24" rx="6" fill="none" stroke="#c9bda9" stroke-dasharray="5 4"/>
+  <text x="663" y="176" text-anchor="middle" font-size="11.5" fill="#8a7963">该条目已从大纲与搜索中隐藏</text>
+  <rect x="496" y="188" width="220" height="14" rx="5" fill="none" stroke="#c9bda9" stroke-dasharray="4 4"/>
+  <text x="506" y="197" font-size="10.5" fill="#8a7963">搜索结果：无匹配</text>
+
+  <rect x="482" y="214" width="170" height="40" rx="10" fill="#ffffff" stroke="#efe7d8"/>
+  <circle cx="502" cy="230" r="6" fill="none" stroke="#5a4a35" stroke-width="1.6"/>
+  <path d="M 506,234 L 511,239" stroke="#5a4a35" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="518" y="239" font-size="11.5" fill="#5a4a35">搜索中完全屏蔽</text>
+  <rect x="662" y="214" width="182" height="40" rx="10" fill="#ffffff" stroke="#efe7d8"/>
+  <rect x="682" y="228" width="6" height="6" rx="1" fill="#5b8cff"/>
+  <rect x="690" y="228" width="6" height="6" rx="1" fill="#5b8cff" fill-opacity="0.5"/>
+  <rect x="682" y="236" width="6" height="6" rx="1" fill="#5b8cff" fill-opacity="0.5"/>
+  <rect x="690" y="236" width="6" height="6" rx="1" fill="#5b8cff"/>
+  <text x="700" y="239" font-size="11.5" fill="#5a4a35">仅管理面板可见</text>
+</svg>

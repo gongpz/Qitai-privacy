@@ -60,5 +60,19 @@
   "idleAutoLockHint": "无鼠标 / 键盘操作超过设定时长后，自动锁定全部已解锁文档。",
   "idleMinutes": "闲置时长（分钟）",
   "idleMinutesHint": "取值范围 1 - 120 分钟，默认 10 分钟。",
-  "idleLocked": "闲置超时，已自动锁定全部文档"
+  "idleLocked": "闲置超时，已自动锁定全部文档",
+  "aboutScopeLabel": "轻态隐私",
+  "aboutScopeText": "轻量锁住文档与目录，挡住随手翻阅；不改内核、不改数据库结构。",
+  "aboutBoundaryIntro": "安全边界（必读）",
+  "aboutBoundary1": "应用层保护，非磁盘级加密",
+  "aboutBoundary2": "默认块正文仍明文存于本地数据库",
+  "aboutBoundary3": "解锁状态仅存内存，刷新即失效",
+  "aboutAdvanced": "高级模式：实验性预留，默认关闭，不写回块内容",
+  "aboutBackupLead": "密钥与密码不提供找回，请导出备份并妥善保存。",
+  "aboutGoBackup": "前往备份 →",
+  "aboutFooter": "零第三方依赖 · 前端插件 · 8 模块构建",
+  "aboutAdapter": "思源笔记 3.x",
+  "themeAuto": "跟随系统",
+  "themeLight": "浅色",
+  "themeDark": "深色"
 }

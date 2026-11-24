@@ -60,5 +60,19 @@
   "idleAutoLockHint": "Lock all unlocked documents after the configured idle time.",
   "idleMinutes": "Idle minutes",
   "idleMinutesHint": "Range 1 - 120 minutes, default 10.",
-  "idleLocked": "Idle timeout: all documents locked"
+  "idleLocked": "Idle timeout: all documents locked",
+  "aboutScopeLabel": "Light Privacy",
+  "aboutScopeText": "Lightly lock documents and notebooks against casual browsing — no kernel changes, no database schema changes.",
+  "aboutBoundaryIntro": "Security boundary (must read)",
+  "aboutBoundary1": "Application-level protection, not disk-level encryption",
+  "aboutBoundary2": "Block content stays plaintext in the local database by default",
+  "aboutBoundary3": "Unlock state lives only in memory and resets on refresh",
+  "aboutAdvanced": "Advanced mode: experimental placeholder, off by default, never writes back block content",
+  "aboutBackupLead": "Keys and passwords cannot be recovered. Export a backup and keep it safe.",
+  "aboutGoBackup": "Go to backup →",
+  "aboutFooter": "Zero third-party dependencies · Frontend plugin · 8 modules",
+  "aboutAdapter": "SiYuan 3.x",
+  "themeAuto": "Follow system",
+  "themeLight": "Light",
+  "themeDark": "Dark"
 }

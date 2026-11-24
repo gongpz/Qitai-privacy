@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect x="0" y="0" width="900" height="420" rx="16" fill="#faf6ef"/>
+
+  <!-- 面板窗口 -->
+  <rect x="44" y="32" width="820" height="364" rx="16" fill="#efe7d8" fill-opacity="0.5"/>
+  <rect x="40" y="28" width="820" height="364" rx="16" fill="#ffffff" stroke="#efe7d8"/>
+  <path d="M 40,70 L 860,70" stroke="#efe7d8" stroke-width="1"/>
+  <circle cx="64" cy="49" r="5" fill="#efe7d8"/>
+  <circle cx="84" cy="49" r="5" fill="#efe7d8"/>
+  <circle cx="104" cy="49" r="5" fill="#efe7d8"/>
+  <text x="132" y="54" font-size="15" font-weight="600" fill="#2b2013">轻态隐私 · 管理面板</text>
+  <!-- 顶栏指纹图标示意（与源码 LOCK_ICON 指纹 path 一致） -->
+  <g fill="none" stroke="#e8890c" stroke-width="1.5" stroke-linecap="round">
+    <path d="M 812,53 A 12,12 0 0 1 836,53"/>
+    <path d="M 815,53 A 9,9 0 0 1 833,53"/>
+    <path d="M 818,53 A 6,6 0 0 1 830,53"/>
+    <path d="M 821,53 A 3,3 0 0 1 827,53"/>
+    <path d="M 820,56 A 5,5 0 0 1 828,56"/>
+  </g>
+
+  <!-- 四个 Tab，选中「加密清单」 -->
+  <rect x="56" y="80" width="96" height="30" rx="8" fill="#fdf0db"/>
+  <text x="104" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#b45309">加密清单</text>
+  <text x="176" y="100" font-size="13" fill="#5a4a35">全局设置</text>
+  <text x="268" y="100" font-size="13" fill="#5a4a35">密钥备份与恢复</text>
+  <text x="430" y="100" font-size="13" fill="#5a4a35">关于</text>
+  <rect x="56" y="116" width="96" height="2" rx="1" fill="#e8890c"/>
+  <path d="M 40,118 L 860,118" stroke="#efe7d8" stroke-width="1"/>
+
+  <!-- 工具栏 -->
+  <text x="64" y="147" font-size="12" fill="#5a4a35">共 3 项 · 1 已解锁</text>
+  <rect x="664" y="128" width="96" height="26" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="712" y="146" text-anchor="middle" font-size="11" fill="#5a4a35">加锁当前文档</text>
+  <rect x="768" y="128" width="64" height="26" rx="6" fill="#fdf0db"/>
+  <text x="800" y="146" text-anchor="middle" font-size="11" fill="#b45309">刷新列表</text>
+
+  <!-- 加密清单表格 -->
+  <rect x="56" y="172" width="788" height="186" rx="10" fill="#ffffff" stroke="#efe7d8"/>
+  <rect x="56" y="172" width="788" height="36" rx="10" fill="#faf6ef"/>
+  <rect x="56" y="196" width="788" height="12" fill="#faf6ef"/>
+  <text x="68" y="196" font-size="12" font-weight="600" fill="#5a4a35">标题</text>
+  <text x="312" y="196" font-size="12" font-weight="600" fill="#5a4a35">保护模式</text>
+  <text x="442" y="196" font-size="12" font-weight="600" fill="#5a4a35">递归</text>
+  <text x="532" y="196" font-size="12" font-weight="600" fill="#5a4a35">创建时间</text>
+  <text x="672" y="196" font-size="12" font-weight="600" fill="#5a4a35">操作</text>
+  <path d="M 300,172 L 300,358 M 430,172 L 430,358 M 520,172 L 520,358 M 660,172 L 660,358" stroke="#efe7d8" stroke-width="1"/>
+  <path d="M 56,208 L 844,208 M 56,258 L 844,258 M 56,308 L 844,308" stroke="#efe7d8" stroke-width="1"/>
+
+  <!-- 第 1 行：已锁定 / 密码可见 -->
+  <path d="M 74,232 L 74,229 A 4,4 0 0 1 82,229 L 82,232" fill="none" stroke="#b45309" stroke-width="2"/>
+  <rect x="72" y="232" width="12" height="10" rx="2" fill="#e8890c"/>
+  <circle cx="78" cy="236" r="1.5" fill="#ffffff"/>
+  <text x="94" y="238" font-size="13" fill="#2b2013">季度财务报表</text>
+  <rect x="312" y="221" width="68" height="24" rx="12" fill="#fdf0db"/>
+  <text x="346" y="237" text-anchor="middle" font-size="11.5" fill="#b45309">密码可见</text>
+  <text x="442" y="237" font-size="12" fill="#2b2013">是</text>
+  <text x="532" y="237" font-size="12" fill="#5a4a35">2026-11-18</text>
+  <rect x="672" y="224" width="66" height="22" rx="6" fill="#fdf0db"/>
+  <text x="705" y="239" text-anchor="middle" font-size="10.5" fill="#b45309">解锁查看</text>
+  <rect x="744" y="224" width="52" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="770" y="239" text-anchor="middle" font-size="10.5" fill="#5a4a35">改密码</text>
+  <rect x="802" y="224" width="38" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="821" y="239" text-anchor="middle" font-size="10.5" fill="#5a4a35">更多</text>
+
+  <!-- 第 2 行：已解锁（开锁图标）/ 隐藏 -->
+  <path d="M 74,282 L 74,279 A 4,4 0 0 1 81,277" fill="none" stroke="#0e9f6e" stroke-width="2" stroke-linecap="round"/>
+  <rect x="72" y="282" width="12" height="10" rx="2" fill="#0e9f6e"/>
+  <circle cx="78" cy="286" r="1.5" fill="#ffffff"/>
+  <text x="94" y="288" font-size="13" fill="#2b2013">客户资料（目录）</text>
+  <rect x="312" y="271" width="68" height="24" rx="12" fill="#faf6ef" stroke="#efe7d8"/>
+  <text x="346" y="287" text-anchor="middle" font-size="11.5" fill="#2b2013">隐藏</text>
+  <text x="442" y="287" font-size="12" fill="#2b2013">是</text>
+  <text x="532" y="287" font-size="12" fill="#5a4a35">2026-11-12</text>
+  <rect x="672" y="274" width="66" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="705" y="289" text-anchor="middle" font-size="10.5" fill="#0e9f6e">立即上锁</text>
+  <rect x="744" y="274" width="52" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="770" y="289" text-anchor="middle" font-size="10.5" fill="#5a4a35">改密码</text>
+  <rect x="802" y="274" width="38" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="821" y="289" text-anchor="middle" font-size="10.5" fill="#5a4a35">更多</text>
+
+  <!-- 第 3 行：已锁定 / 密码可见 / 不递归 -->
+  <path d="M 74,332 L 74,329 A 4,4 0 0 1 82,329 L 82,332" fill="none" stroke="#b45309" stroke-width="2"/>
+  <rect x="72" y="332" width="12" height="10" rx="2" fill="#e8890c"/>
+  <circle cx="78" cy="336" r="1.5" fill="#ffffff"/>
+  <text x="94" y="338" font-size="13" fill="#2b2013">个人日记</text>
+  <rect x="312" y="321" width="68" height="24" rx="12" fill="#fdf0db"/>
+  <text x="346" y="337" text-anchor="middle" font-size="11.5" fill="#b45309">密码可见</text>
+  <text x="442" y="337" font-size="12" fill="#2b2013">否</text>
+  <text x="532" y="337" font-size="12" fill="#5a4a35">2026-11-03</text>
+  <rect x="672" y="324" width="66" height="22" rx="6" fill="#fdf0db"/>
+  <text x="705" y="339" text-anchor="middle" font-size="10.5" fill="#b45309">解锁查看</text>
+  <rect x="744" y="324" width="52" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="770" y="339" text-anchor="middle" font-size="10.5" fill="#5a4a35">改密码</text>
+  <rect x="802" y="324" width="38" height="22" rx="6" fill="#ffffff" stroke="#efe7d8"/>
+  <text x="821" y="339" text-anchor="middle" font-size="10.5" fill="#5a4a35">更多</text>
+
+  <text x="64" y="378" font-size="11.5" fill="#8a7963">提示：解锁状态仅存内存，刷新或重启思源后自动重新上锁</text>
+</svg>
