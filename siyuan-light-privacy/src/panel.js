@@ -467,7 +467,7 @@ class Panel {
         container.innerHTML = '<div class="lp-section">' +
             '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">' +
             '<strong style="font-size:15px">' + t("aboutScopeLabel", "轻态隐私") + '</strong>' +
-            '<span class="lp-badge lp-badge--mode">' + t("version", "版本") + ' 0.4.0</span>' +
+            '<span class="lp-badge lp-badge--mode">' + t("version", "版本") + ' 0.4.1</span>' +
             '<span class="lp-badge lp-badge--mode">' + t("aboutAdapter", "思源笔记 3.x") + '</span>' +
             '</div></div>' +
             '<div class="lp-section"><div class="lp-setting-row__text">' +
