@@ -1,0 +1,56 @@
+{
+  "name": "siyuan-light-privacy",
+  "author": "Light Privacy",
+  "url": "",
+  "version": "0.4.0",
+  "minAppVersion": "3.0.0",
+  "kernels": [
+    "windows",
+    "linux",
+    "darwin",
+    "ios",
+    "android",
+    "harmony",
+    "docker",
+    "all"
+  ],
+  "backends": [
+    "windows",
+    "linux",
+    "darwin",
+    "ios",
+    "android",
+    "harmony",
+    "docker",
+    "all"
+  ],
+  "frontends": [
+    "desktop",
+    "mobile",
+    "browser-desktop",
+    "browser-mobile",
+    "desktop-window",
+    "all"
+  ],
+  "settingsWindow": true,
+  "displayName": {
+    "default": "Light Privacy",
+    "zh-CN": "轻态隐私"
+  },
+  "description": {
+    "default": "Lightweight privacy lock for SiYuan documents and folders",
+    "zh-CN": "为思源文档与目录添加轻量级隐私锁"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.md"
+  },
+  "icon": "icon.png",
+  "keywords": [
+    "隐私",
+    "加密",
+    "锁",
+    "privacy",
+    "lock"
+  ]
+}
